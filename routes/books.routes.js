@@ -83,7 +83,7 @@ router.post("/delete-comment/:id", (req,res,next)=>{
 
 
 function createSearchBookUrl(arrWords){
-    return `https://www.googleapis.com/books/v1/volumes?q=${arrWords.join("+")}`
+    return `https://www.googleapis.com/books/v1/volumes?q=${arrWords.join("+")}&language=en`
 }
 
 
